@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 
 export default function Layout({ children, }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="text-white bg-gray-900">
+    <html lang="en" className="text-white">
       <body className="bg-gray-900">
-        <Header />
-        {children}
-        <Footer />
+          <Header />
+          {children}
+          <Footer />
       </body>
     </html>
   )

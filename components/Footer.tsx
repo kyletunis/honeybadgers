@@ -1,8 +1,8 @@
 
 export default function Example() {
     return (
-        <footer className="bg-gray-900 text-white">
-            <div className="mx-auto md:flex md:items-center md:justify-between lg:px-8">
+        <footer className="w-screen bg-gray-900 border-t border-gray-800/60">
+            <div className="mx-auto max-w-7xl p-6 md:flex md:items-center md:justify-between lg:px-8">
                 <div className="flex justify-center items-center md:order-2">
                     <a className="text-center text-[10px] leading-5 hover:text-amber-500 font-julius font-semibold" href="https://www.islandhockey101.com/" target="_blank">
                         Island Hockey 101

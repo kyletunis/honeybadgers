@@ -4,15 +4,15 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
+  { name: 'home', href: '/' },
   { name: 'team', href: '/pages/team' },
   { name: 'schedule', href: '/pages/schedule' },
-  { name: 'stats', href: '/pages/stats' },
 ]
 
 const mobileNavigation = [
+  { name: 'home', href: '/' },
   { name: 'team', href: '/pages/team' },
   { name: 'schedule', href: '/pages/schedule' },
-  { name: 'stats', href: '/pages/stats' },
   { name: 'dressing room', href: '/pages/dressing-room' }
 ]
 export default function Header() {
@@ -21,7 +21,7 @@ export default function Header() {
   return (
 
     // Header
-    <header className="bg-gray-900 text-white drop-shadow-lg">
+    <header className="bg-gray-900 text-white shadow-lg border-b border-gray-800/60">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex flex-1">
           <div className="hidden lg:flex lg:gap-x-12">
@@ -62,7 +62,7 @@ export default function Header() {
       {/* Mobile Section */}
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-blue-950 px-6 py-6">
+        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-gray-900 px-6 py-6">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
