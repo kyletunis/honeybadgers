@@ -9,16 +9,24 @@ const navigation = [
   { name: 'stats', href: '/pages/stats' },
 ]
 
+const mobileNavigation = [
+  { name: 'team', href: '/pages/team' },
+  { name: 'schedule', href: '/pages/schedule' },
+  { name: 'stats', href: '/pages/stats' },
+  {name: 'dressing room', href: '/pages/dressing-room'}
+]
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-blue-950 text-white">
+
+    // Header
+    <header className="bg-blue-950 text-white drop-shadow-md border-amber-500">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex flex-1">
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-julius tracking-wide hover:text-amber-400 hover:drop-shadow-md">
+              <a key={item.name} href={item.href} className="text-sm font-julius tracking-wide hover:text-amber-500 hover:drop-shadow-md">
                 {item.name}
               </a>
             ))}
@@ -35,18 +43,26 @@ export default function Header() {
           </div>
         </div>
         <a href="/" className="-m-1.5 p-1.5">
-          <span className="md:text-3xl font-fugaz tracking-wide text-amber-400 drop-shadow-md">Honey Badgers</span>
-          
+          <span className="md:text-3xl font-fugaz tracking-wide text-amber-500 drop-shadow-md">HONEY</span>
+          <span className="md:text-3xl font-fugaz tracking-wide text-white drop-shadow-md"> BADGERS</span>
+
         </a>
         <div className="flex flex-1 justify-end">
-          <a href="/pages/dressing-room" className="text-xs font-julius tracking-wide hover:text-amber-400 hover:drop-shadow-md"><span className="md:inline-flex md:mr-2 hidden">
-            Dressing Room </span><span aria-hidden="true" className="text-amber-400">&rarr;</span>
+          <a href="/pages/dressing-room" className="text-xs font-julius tracking-wide hover:text-amber-500 hover:drop-shadow-md">
+            <span className="md:inline-flex md:mr-2 hidden font-julius">
+              Dressing Room
+            </span>
+            <span aria-hidden="true" className="text-amber-500">
+              &rarr;
+            </span>
           </a>
         </div>
       </nav>
+
+      {/* Mobile Section */}
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6">
+        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-blue-950 px-6 py-6">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
@@ -58,26 +74,23 @@ export default function Header() {
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
+            <a href="/" className="-m-1.5 p-1.5 inline-flex">
+              <span className="sr-only">Honey Badgers</span>
+              <h1 className="text-sm font-fugaz text-amber-500">H</h1>
+              <h1 className="text-sm font-fugaz">B</h1>
+              {/* <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="/images/small_logo.png"
                 alt=""
-              />
-            </a>
-            <div className="flex flex-1 justify-end">
-              <a href="#" className="text-sm font-semibold leading-6 ">
-                Log in <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
+              /> */}
+            </a>         
           </div>
           <div className="mt-6 space-y-2">
-            {navigation.map((item) => (
+            {mobileNavigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+                className="-mx-3 block rounded-lg px-3 py-2 text-base font-julius font-semibold leading-7  hover:bg-amber-500"
               >
                 {item.name}
               </a>
