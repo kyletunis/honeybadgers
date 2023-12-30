@@ -13,7 +13,7 @@ const mobileNavigation = [
   { name: 'team', href: '/pages/team' },
   { name: 'schedule', href: '/pages/schedule' },
   { name: 'stats', href: '/pages/stats' },
-  {name: 'dressing room', href: '/pages/dressing-room'}
+  { name: 'dressing room', href: '/pages/dressing-room' }
 ]
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -21,12 +21,12 @@ export default function Header() {
   return (
 
     // Header
-    <header className="bg-blue-950 text-white drop-shadow-md border-amber-500">
+    <header className="bg-gray-900 text-white drop-shadow-lg">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex flex-1">
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-julius tracking-wide hover:text-amber-500 hover:drop-shadow-md">
+              <a key={item.name} href={item.href} className="text-sm font-julius font-semibold tracking-wide hover:text-amber-500 hover:drop-shadow-md">
                 {item.name}
               </a>
             ))}
@@ -50,7 +50,7 @@ export default function Header() {
         <div className="flex flex-1 justify-end">
           <a href="/pages/dressing-room" className="text-xs font-julius tracking-wide hover:text-amber-500 hover:drop-shadow-md">
             <span className="md:inline-flex md:mr-2 hidden font-julius">
-              Dressing Room
+              Go To Dressing Room
             </span>
             <span aria-hidden="true" className="text-amber-500">
               &rarr;
@@ -83,7 +83,7 @@ export default function Header() {
                 src="/images/small_logo.png"
                 alt=""
               /> */}
-            </a>         
+            </a>
           </div>
           <div className="mt-6 space-y-2">
             {mobileNavigation.map((item) => (
