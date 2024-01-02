@@ -1,19 +1,24 @@
-
-export default function Example() {
+import { socials } from './socials'
+  
+  export default function Footer() {
     return (
-        <footer className="w-screen bg-gray-900 border-t border-gray-800/60">
-            <div className="mx-auto max-w-7xl p-6 md:flex md:items-center md:justify-between lg:px-8">
-                <div className="flex justify-center items-center md:order-2">
-                    <a className="text-center text-[10px] leading-5 hover:text-amber-500 font-julius font-semibold" href="https://www.islandhockey101.com/" target="_blank">
-                        Island Hockey 101
-                    </a>
-                </div>
-                <div className="mt-8 md:order-1 md:mt-0">
-                    <p className="text-center font-julius text-[10px] font-semibold leading-5">
-                        Sponsored by Island Drywall
-                    </p>
-                </div>
-            </div>
-        </footer>
+      <footer className="bg-gray-900">
+        <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+          <div className="flex justify-center space-x-6 md:order-2">
+            {socials.map((item) => (
+              <a key={item.name} href={item.href} className="text-white hover:text-amber-500">
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
+          <div className="mt-8 md:order-1 md:mt-0">
+            <p className="text-center text-xs leading-5 text-white font-manrope">
+              Sponsored by: Island Drywall
+            </p>
+          </div>
+        </div>
+      </footer>
     )
-}
+  }
+  
