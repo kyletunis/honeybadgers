@@ -1,6 +1,6 @@
-{/* Roster Information */}
+{/* Roster Information */ }
 
-const trevorMcNulty = {
+export const trevorMcNulty = {
     name: 'Trevor McNulty',
     id: 2,
     position: 'Forward/Defense',
@@ -9,7 +9,7 @@ const trevorMcNulty = {
     status: 'Active'
 }
 
-const mikeMacrae = {
+export const mikeMacrae = {
     name: 'Mike Macrae',
     id: 3,
     position: 'Defense',
@@ -18,7 +18,7 @@ const mikeMacrae = {
     status: 'Injured'
 }
 
-const johnAdlkirchner = {
+export const johnAdlkirchner = {
     name: 'John Adlkirchner',
     id: 5,
     position: 'Forward/Defense',
@@ -27,7 +27,7 @@ const johnAdlkirchner = {
     status: 'Injured'
 }
 
-const christopherPiatkowski = {
+export const christopherPiatkowski = {
     name: 'Christopher Piatkowski',
     id: 6,
     position: 'Forward',
@@ -36,7 +36,7 @@ const christopherPiatkowski = {
     status: 'Active'
 }
 
-const connorDrinkwalter = {
+export const connorDrinkwalter = {
     name: 'Connor Drinkwalter',
     id: 7,
     position: 'Defense',
@@ -45,7 +45,7 @@ const connorDrinkwalter = {
     status: 'Active'
 }
 
-const kyleTunis = {
+export const kyleTunis = {
     name: 'Kyle Tunis',
     id: 8,
     position: 'Forward',
@@ -54,7 +54,7 @@ const kyleTunis = {
     status: 'Active'
 }
 
-const deanDegirolamo = {
+export const deanDegirolamo = {
     name: 'Dean Degirolamo',
     id: 9,
     position: 'Defense',
@@ -63,7 +63,7 @@ const deanDegirolamo = {
     status: 'Active'
 }
 
-const traytonAusten = {
+export const traytonAusten = {
     name: 'Trayton Austen',
     id: 10,
     position: 'Forward',
@@ -72,7 +72,7 @@ const traytonAusten = {
     status: 'Active'
 }
 
-const nickPolanyi = {
+export const nickPolanyi = {
     name: 'Nick Polanyi',
     id: 11,
     position: 'Forward',
@@ -81,7 +81,7 @@ const nickPolanyi = {
     status: 'Active'
 }
 
-const dustinStorozuk = {
+export const dustinStorozuk = {
     name: 'Dustin Storozuk',
     id: 21,
     position: 'Forward',
@@ -90,7 +90,7 @@ const dustinStorozuk = {
     status: 'Active'
 }
 
-const trevorDorman = {
+export const trevorDorman = {
     name: 'Trevor Dorman',
     id: 44,
     position: 'Forward',
@@ -99,7 +99,7 @@ const trevorDorman = {
     status: 'Injured'
 }
 
-const tylerRennie = {
+export const tylerRennie = {
     name: 'Tyler Rennie',
     id: 60,
     position: 'Goalie',
@@ -108,7 +108,7 @@ const tylerRennie = {
     status: 'Active'
 }
 
-const alexAniskov = {
+export const alexAniskov = {
     name: 'Alex Aniskov',
     id: 77,
     position: 'Defense',
@@ -117,7 +117,7 @@ const alexAniskov = {
     status: 'Active'
 }
 
-const wolfGangSchoenefuhs = {
+export const wolfGangSchoenefuhs = {
     name: 'Wolfgang Schoenefuhs',
     id: 81,
     position: 'Forward/Defense',
@@ -126,7 +126,7 @@ const wolfGangSchoenefuhs = {
     status: 'Active'
 }
 
-const haydenLeach = {
+export const haydenLeach = {
     name: 'Hayden Leach',
     id: 88,
     position: 'Forward/Defense',
@@ -135,7 +135,7 @@ const haydenLeach = {
     status: 'Active'
 }
 
-const jonnyHoffart = {
+export const jonnyHoffart = {
     name: 'Jonny Hoffart',
     id: 89,
     position: 'Forward',
@@ -144,7 +144,7 @@ const jonnyHoffart = {
     status: 'Active'
 }
 
-const willWolitski = { 
+export const willWolitski = {
     name: 'Will Wolitski',
     id: 92,
     position: 'Forward',
@@ -153,7 +153,7 @@ const willWolitski = {
     status: 'Active'
 }
 
-const jessicaDorman = {
+export const jessicaDorman = {
     name: 'Jessica Dorman',
     id: 94,
     position: 'Defense',
@@ -162,4 +162,23 @@ const jessicaDorman = {
     status: 'Active'
 }
 
-const roster = [trevorMcNulty, mikeMacrae, johnAdlkirchner, christopherPiatkowski, connorDrinkwalter, kyleTunis, deanDegirolamo, traytonAusten, nickPolanyi, dustinStorozuk, trevorDorman, tylerRennie, alexAniskov, wolfGangSchoenefuhs, haydenLeach, jonnyHoffart, willWolitski, jessicaDorman];
+export const roster = [
+    trevorMcNulty,
+    mikeMacrae,
+    johnAdlkirchner,
+    christopherPiatkowski,
+    connorDrinkwalter,
+    kyleTunis,
+    deanDegirolamo,
+    traytonAusten,
+    nickPolanyi,
+    dustinStorozuk,
+    trevorDorman,
+    tylerRennie,
+    alexAniskov,
+    wolfGangSchoenefuhs,
+    haydenLeach,
+    jonnyHoffart,
+    willWolitski,
+    jessicaDorman
+];

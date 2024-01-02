@@ -1,4 +1,5 @@
 import { arenas } from './arenas';
+import { teams } from './teams';
 
 {/* Schedule Information */}
 
