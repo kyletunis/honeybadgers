@@ -1,3 +1,5 @@
+{/* Roster Page -- Player Cards -- Bios -- Stats -- Openings*/}
+
 import TeamTable from "@/components/TeamTable";
 
 export default function TeamPage() {

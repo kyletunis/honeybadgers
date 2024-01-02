@@ -1,4 +1,4 @@
-import { socials } from './socials'
+import { socials } from './SocialButtons'
   
   export default function Footer() {
     return (

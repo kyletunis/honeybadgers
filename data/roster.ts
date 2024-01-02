@@ -5,8 +5,8 @@ export const trevorMcNulty = {
     id: 2,
     position: 'Forward/Defense',
     number: 2,
-    image: '',
-    status: 'Active'
+    stats: 'https://www.islandhockey101.com/stats#/player/1290719',
+    status: 'Active',
 }
 
 export const mikeMacrae = {
@@ -14,7 +14,7 @@ export const mikeMacrae = {
     id: 3,
     position: 'Defense',
     number: 3,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1505027',
     status: 'Injured'
 }
 
@@ -23,7 +23,7 @@ export const johnAdlkirchner = {
     id: 5,
     position: 'Forward/Defense',
     number: 5,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1736693',
     status: 'Injured'
 }
 
@@ -32,7 +32,7 @@ export const christopherPiatkowski = {
     id: 6,
     position: 'Forward',
     number: 6,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1760986',
     status: 'Active'
 }
 
@@ -41,7 +41,7 @@ export const connorDrinkwalter = {
     id: 7,
     position: 'Defense',
     number: 7,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1338670',
     status: 'Active'
 }
 
@@ -50,7 +50,7 @@ export const kyleTunis = {
     id: 8,
     position: 'Forward',
     number: 8,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1351522',
     status: 'Active'
 }
 
@@ -59,7 +59,7 @@ export const deanDegirolamo = {
     id: 9,
     position: 'Defense',
     number: 9,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1253767',
     status: 'Active'
 }
 
@@ -68,7 +68,7 @@ export const traytonAusten = {
     id: 10,
     position: 'Forward',
     number: 10,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1875867',
     status: 'Active'
 }
 
@@ -77,7 +77,7 @@ export const nickPolanyi = {
     id: 11,
     position: 'Forward',
     number: 11,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1281538',
     status: 'Active'
 }
 
@@ -86,7 +86,7 @@ export const dustinStorozuk = {
     id: 21,
     position: 'Forward',
     number: 21,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1233397',
     status: 'Active'
 }
 
@@ -95,7 +95,7 @@ export const trevorDorman = {
     id: 44,
     position: 'Forward',
     number: 44,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1784753',
     status: 'Injured'
 }
 
@@ -104,7 +104,7 @@ export const tylerRennie = {
     id: 60,
     position: 'Goalie',
     number: 60,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1094963',
     status: 'Active'
 }
 
@@ -113,7 +113,7 @@ export const alexAniskov = {
     id: 77,
     position: 'Defense',
     number: 77,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1249337',
     status: 'Active'
 }
 
@@ -122,7 +122,7 @@ export const wolfGangSchoenefuhs = {
     id: 81,
     position: 'Forward/Defense',
     number: 81,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1879629',
     status: 'Active'
 }
 
@@ -131,7 +131,7 @@ export const haydenLeach = {
     id: 88,
     position: 'Forward/Defense',
     number: 88,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1499378',
     status: 'Active'
 }
 
@@ -140,16 +140,16 @@ export const jonnyHoffart = {
     id: 89,
     position: 'Forward',
     number: 89,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1871793',
     status: 'Active'
 }
 
-export const willWolitski = {
-    name: 'Will Wolitski',
+export const wilWolitski = {
+    name: 'Wil Wolitski',
     id: 92,
     position: 'Forward',
     number: 92,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1767173',
     status: 'Active'
 }
 
@@ -158,7 +158,7 @@ export const jessicaDorman = {
     id: 94,
     position: 'Defense',
     number: 94,
-    image: '',
+    stats: 'https://www.islandhockey101.com/stats#/player/1172728',
     status: 'Active'
 }
 
@@ -179,6 +179,6 @@ export const roster = [
     wolfGangSchoenefuhs,
     haydenLeach,
     jonnyHoffart,
-    willWolitski,
+    wilWolitski,
     jessicaDorman
 ];

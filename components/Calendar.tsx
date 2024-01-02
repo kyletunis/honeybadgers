@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
 import { Menu, Transition } from '@headlessui/react'
 import { EllipsisVerticalIcon } from '@heroicons/react/24/outline'
-
+import { schedule } from '../data/schedule'
 
 const days = [
     { date: '2024-12-27' },
@@ -53,36 +53,7 @@ const days = [
     { date: '2024-02-09', isSelected: true }
 ]
 
-const games = [
-    {
-        id: 1,
-        opponent: 'Victoria Pylons',
-        imageUrl: '/images/opponents/pylons.png',
-        start: '10:00 PM',
-        startDatetime: '2024-01-12T22:00',
-    },
-    {
-        id: 2,
-        opponent: 'North Island Wildmen',
-        imageUrl: '/images/opponents/pylons.png',
-        start: '11:00 PM',
-        startDatetime: '2024-01-27T23:00',
-    },
-    {
-        id: 3,
-        opponent: 'Dentex Stingrays',
-        imageUrl: '/images/opponents/pylons.png',
-        start: '10:30 PM',
-        startDatetime: '2024-02-04T22:30',
-    },
-    {
-        id: 4,
-        opponent: 'Seoul Chicken Blackouts',
-        imageUrl: '/images/opponents/pylons.png',
-        start: '10:00 PM',
-        startDatetime: '2024-02-09T22:00',
-    },
-]
+
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -147,16 +118,16 @@ export default function Schedule() {
                         Upcoming Games
                     </h2>
                     <ol className="mt-4 space-y-1 text-sm leading-6 text-white">
-                        {games.map((game) => (
+                        {schedule.map((game) => (
                             <li
                                 key={game.id}
                                 className="group flex items-center space-x-4 rounded-xl px-4 py-2 focus-within:bg-gray-100 hover:bg-amber-500"
                             >
-                                <img src={game.imageUrl} alt="" className="h-10 w-10 flex-none rounded-full" />
+                                <img src={game.logo} alt="" className="h-10 w-10 flex-none rounded-full" />
                                 <div className="flex-auto">
                                     <p className="text-white">{game.opponent}</p>
-                                    <p className="mt-0.5">
-                                        <time dateTime={game.startDatetime}>{game.start}</time>
+                                    <p className="mt-0.5 text-gray-500">
+                                        <time dateTime={game.date}>{game.date} @ {game.time}</time>
                                     </p>
                                 </div>
                                 <Menu as="div" className="relative opacity-0 focus-within:opacity-100 group-hover:opacity-100">

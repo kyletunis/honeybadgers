@@ -1,4 +1,4 @@
-import { Roster } from '@/data/roster'
+import { roster } from '@/data/roster'
 import { ChartBarIcon, ChartBarSquareIcon } from '@heroicons/react/24/outline'
 
 export default function TeamTable() {
@@ -34,7 +34,7 @@ export default function TeamTable() {
                                             </tr>
                                         </thead>
                                         <tbody className="divide-y divide-gray-800">
-                                            {Roster.map((person) => (
+                                            {roster.map((person) => (
                                                 <tr key={person.id}>
                                                     <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0">
                                                         {person.number}

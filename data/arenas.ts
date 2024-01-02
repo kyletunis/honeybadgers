@@ -1,4 +1,4 @@
-{/* Arena Information */}
+{/* Arena Information */ }
 
 export const seaparc = {
     name: 'Seaparc Leisure Complex',

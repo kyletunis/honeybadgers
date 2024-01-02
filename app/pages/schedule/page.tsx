@@ -1,5 +1,7 @@
+{/*Scheduling Page - Working Calendar - Preview Cards - Recent Results */}
+
 import  Schedule  from '@/components/Calendar';
-import ScheduleCard from '@/components/ScheduleCard';
+import ScheduleCard from '@/components/PreviewCard';
 
 
 export default function SchedulePage() {
