@@ -1,4 +1,4 @@
-{/* Dressing Room Page --  MVP Voting, Shared Team Spotify Playlst, Chatroom */}
+{/* Dressing Room Page --  MVP Voting -- Shared Team Spotify Playlst -- Chatroom */}
 
 export default function DressingRoomPage() {
     return (

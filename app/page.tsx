@@ -1,4 +1,4 @@
-{/* Home Page -- News, Next game info, recent results info, sponsors etc */}
+{/* Home Page -- News -- Next Game(Hero Section) -- Spotlight -- Resent Results -- Sponsors */}
 
 export default function HomePage() {
   return (

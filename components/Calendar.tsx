@@ -125,7 +125,12 @@ export default function Schedule() {
                             >
                                 <img src={game.logo} alt="" className="h-10 w-10 flex-none rounded-full" />
                                 <div className="flex-auto">
-                                    <p className="text-white">{game.opponent}</p>
+                                    <p className="text-white">
+                                        <b className="font-fugaz text-sm mr-4 text-amber-500">
+                                            VS
+                                        </b>
+                                        {game.opponent}
+                                    </p>
                                     <p className="mt-0.5 text-gray-500">
                                         <time dateTime={game.date}>{game.date} @ {game.time}</time>
                                     </p>

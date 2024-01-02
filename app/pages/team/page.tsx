@@ -1,4 +1,4 @@
-{/* Roster Page -- Player Cards -- Bios -- Stats -- Openings*/}
+{/* Roster Page -- Player Cards -- Bios -- Stats -- Injured Reserve List -- Openings*/}
 
 import TeamTable from "@/components/TeamTable";
 
