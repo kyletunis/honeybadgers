@@ -8,32 +8,40 @@ export const schedule = [
         id: 1,
         opponent: ` ${victoriaPylons.name}`,
         logo: `${victoriaPylons.logo}`,
-        date: '2024-01-12',
+        date: 'Friday, January 12th, 2024',
         time: '10:00 PM',
-        location: `${seaparc.name}`
+        location: `${seaparc.name}`,
+        directions: `${seaparc.directions}`,
+        arenaImg: `${seaparc.image}`
     },
     {
         id: 2,
         opponent: `${northIslandWildmen.name}`,
         logo: `${northIslandWildmen.logo}`,
-        date: '2024-01-27',
+        date: 'Saturday, January 27th, 2024',
         time: '11:00 PM',
-        location: `${westHills.name}`
+        location: `${westHills.name}`,
+        directions: `${westHills.directions}`,
+        arenaImg: `${westHills.image}`
     },
     {
         id: 3,
         opponent: `${dentextStingrays.name}`,
         logo: `${dentextStingrays.logo}`,
-        date: '2024-02-04',
+        date: 'Friday, February 2nd, 2024',
         time: '10:30 PM',
-        location: `${westHills.name}`
+        location: `${westHills.name}`,
+        directions: `${westHills.directions}`,
+        arenaImg: `${westHills.image}`
     },
     {
         id: 4,
         opponent: `${seoulChickenBlackouts.name}`,
         logo: `${seoulChickenBlackouts.logo}`,
-        date: '2024-02-09',
+        date: 'Friday, February 9th, 2024',
         time: '10:00 PM',
-        location: `${saveOnFoods.name}`
+        location: `${saveOnFoods.name}`,
+        directions: `${saveOnFoods.directions}`,
+        arenaImg: `${saveOnFoods.image}`
     },
 ];
