@@ -15,6 +15,7 @@ const mobileNavigation = [
   { name: 'schedule', href: '/pages/schedule' },
   { name: 'dressing room', href: '/pages/dressing-room' }
 ]
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -45,14 +46,13 @@ export default function Header() {
         <a href="/" className="-m-1.5 p-1.5">
           <span className="md:text-3xl font-fugaz tracking-wide text-amber-500 drop-shadow-md">HONEY</span>
           <span className="md:text-3xl font-fugaz tracking-wide text-white drop-shadow-md"> BADGERS</span>
-
         </a>
         <div className="flex flex-1 justify-end">
           <a href="/pages/dressing-room" className="text-xs font-julius tracking-wide hover:text-amber-500 hover:drop-shadow-md">
             <span className="md:inline-flex md:mr-2 hidden font-julius">
               Go To Dressing Room
             </span>
-            <span aria-hidden="true" className="text-amber-500">
+            <span aria-hidden="true" className="hidden md:inline text-amber-500">
               &rarr;
             </span>
           </a>
@@ -78,11 +78,6 @@ export default function Header() {
               <span className="sr-only">Honey Badgers</span>
               <h1 className="text-sm font-fugaz text-amber-500">H</h1>
               <h1 className="text-sm font-fugaz">B</h1>
-              {/* <img
-                className="h-8 w-auto"
-                src="/images/small_logo.png"
-                alt=""
-              /> */}
             </a>
           </div>
           <div className="mt-6 space-y-2">

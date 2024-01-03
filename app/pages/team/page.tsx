@@ -1,11 +1,11 @@
 {/* Roster Page -- Player Cards -- Bios -- Stats -- Injured Reserve List -- Openings*/ }
-
+import H1 from "@/components/H1";
 import TeamTable from "@/components/TeamTable";
 
 export default function TeamPage() {
     return (
         <>
-            <h1 className="text-6xl p-6 font-fugaz tracking-wide underline decoration-amber-500 bg-gray-900 ">ROSTER</h1>
+            <H1>ROSTER</H1>
             <TeamTable />
         </>
     )

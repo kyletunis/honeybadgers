@@ -53,8 +53,6 @@ const days = [
     { date: '2024-02-09', isSelected: true }
 ]
 
-
-
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }

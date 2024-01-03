@@ -1,17 +1,14 @@
 {/*Scheduling Page - Working Calendar - Preview Cards - Recent Results */ }
-
+import H1 from '@/components/H1';
 import Schedule from '@/components/Calendar';
 import ScheduleCard from '@/components/PreviewCard';
-
 
 export default function SchedulePage() {
     return (
         <>
-            <div className="h-screen">
-                <h1 className="text-6xl p-6 font-fugaz tracking-wide underline decoration-amber-500 bg-gray-900 ">SCHEDULE</h1>
-                <Schedule />
-                <ScheduleCard />
-            </div>
+            <H1>SCHEDULE</H1>
+            <Schedule />
+            <ScheduleCard />
         </>
     )
 };
